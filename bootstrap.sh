@@ -25,9 +25,3 @@ else
 		bootstrapper;
 	fi;
 fi
-
-read -p "Your computer must restart for changes to take effect. Would you like to restart now? (y/N) " -n 1;
-echo "";
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    sudo shutdown -r now
-fi;

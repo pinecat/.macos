@@ -64,3 +64,4 @@ function dmginstall() {
 
 brewer;
 dmginstall;
+neofetch;
