@@ -1,0 +1,13 @@
+# enable aliases to be sudo'ed
+alias sudo='sudo '
+
+# list all items, but list directories first
+alias lsdf='gls -Flha --group-directories-first'
+
+# easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
