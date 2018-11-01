@@ -34,6 +34,8 @@ function brewer() {
     brew install telnet
     brew install telnetd
     brew install coreutils
+    brew install screen
+    brew install htop
 
     # install programs from cask
     brew cask install java
