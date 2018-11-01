@@ -321,6 +321,9 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# replace iterm2 plist file with my own
+cp -f $HOME/.macos/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
+
 ###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################
@@ -430,9 +433,3 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 # Randomize port on launch
 defaults write org.m0k.transmission RandomPort -bool true
-
-read -p "Your computer must restart for changes to take effect. Would you like to restart now? (y/N) " -n 1;
-echo "";
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    sudo shutdown -r now
-fi;
