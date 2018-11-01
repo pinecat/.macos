@@ -13,7 +13,7 @@ function brewer() {
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
     # add cask to brew
-    brew tap caskroom cask
+    brew tap caskroom/cask
 
     # install programs from brew
     brew install ruby
