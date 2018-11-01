@@ -46,7 +46,7 @@ function brewer() {
     brew cask install transmission
     brew cask install vlc
     brew cask install steam
-    brew cask install eclipse
+    brew cask install eclipse-java
 }
 
 function dmginstall() {
